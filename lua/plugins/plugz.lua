@@ -23,21 +23,26 @@ return {
           {
             pane = 2,
             section = "terminal",
-            cmd = "colorscript -e square",
-            height = 5,
+            cmd = "img2art  ~/.config/nvim/lua/plugins/ultrakill.png --scale 0.5 --with-color",
+            height = 15,
+            width = 115,
+            padding = 1,
+          },
+          {
+            pane = 2,
+            section = "terminal",
+            cmd = "cowsay -f vader moo I am your FATHER",
+            height = 9,
+            padding = 1,
+          },
+          {
+            pane = 2,
+            section = "terminal",
+            cmd = "cowsay -f ghostbusters When there is somethin strange in your neighborhood who you gonna call",
+            height = 25,
             padding = 1,
           },
           { section = "keys", gap = 1, padding = 1 },
-          {
-            pane = 2,
-            icon = " ",
-            desc = "Browse Repo",
-            padding = 1,
-            key = "b",
-            action = function()
-              Snacks.gitbrowse()
-            end,
-          },
           function()
             local in_git = Snacks.git.get_root() ~= nil
             local cmds = {}
