@@ -14,7 +14,7 @@ return {
         sections = {
           {
             section = "terminal",
-            cmd = "img2art ~/.config/nvim/lua/plugins/zero.jpeg --scale 1 --with-color",
+            cmd = "img2art ~/.config/nvim/lua/plugins/zero.jpeg --scale 1 --with-color | lolcat",
             height = 40,
             indent = -30,
             gap = 0,
@@ -23,16 +23,9 @@ return {
           {
             pane = 2,
             section = "terminal",
-            cmd = "img2art  ~/.config/nvim/lua/plugins/ultrakill.png --scale 0.5 --with-color",
-            height = 15,
-            width = 115,
-            padding = 1,
-          },
-          {
-            pane = 2,
-            section = "terminal",
-            cmd = "cowsay -f vader moo I am your FATHER",
-            height = 9,
+            cmd = "chafa  ~/.config/nvim/lua/plugins/Ultrakill.jpeg -f symbols --passthrough=tmux --clear -c full --scale=3 --stretch",
+            height = 30,
+            width = 50,
             padding = 1,
           },
           {
